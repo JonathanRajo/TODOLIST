@@ -1,0 +1,110 @@
+body
+{
+	 background-image: url(../img/1.jpg);
+ background-repeat: no-repeat;
+    background-size: 100%;
+    margin: 0;
+	background-color: #26282E;
+	color: #efefef;
+    font-family: 'Arial', sans-serif;
+
+    
+}
+
+h1
+{
+	font-size: 64px;
+	font-weight: 400;
+	text-align: center;
+	letter-spacing: 5px;
+	margin-bottom: 0px;
+	margin-top: 40px;
+}
+
+.addtask
+{
+	margin-top: 20px;
+	text-align: center;
+}
+
+input
+ {
+      width: 30%;
+	  margin-top: 10px;
+	  border: solid;
+	  padding: 10px;
+	  font-size: 20px;
+	  background-color: #9bc7e6;
+}
+
+input::placeholder 
+{
+	  color: white;
+	  text-align: center;
+}
+
+.inputBtn
+{
+	background-color: #74ccf4;
+	margin-top: 20px;
+	border: 3px black solid;
+    color: white;
+    padding: 15px 32px;
+    text-decoration: none;
+    display: inline-block;
+	font-size: 28px;
+}
+
+.inputBtn:hover
+{
+	cursor:pointer;
+	background-color: #00a8a8;
+}
+
+.list
+{
+	width: 90%;
+   
+	margin: auto;
+	background-color: #00d3ef;
+   
+	margin-top: 20px;
+	color: white;
+}
+
+.remove
+{
+	background-color: #0075b3;
+	border: 3px black solid;
+	color: white;
+    width: 4%;
+    padding: 5px 15px;
+	font-size: 17px;
+	position: absolute;
+	margin-right: 5px;
+	right: 0;
+	top: 0;
+	opacity: 0.7;
+}
+.remove:hover
+{
+	cursor: pointer;
+	opacity: 1;
+	background-color: #03a6cc;
+}
+
+.element
+{
+	position: relative;
+	padding: 15px 32px;
+	font-size: 22px;
+	word-wrap: break-word;
+	padding-bottom: 10px;
+	border-bottom: solid #8080ff;
+	cursor: pointer;
+}
+
+.element:hover
+{
+	background: #8080ff;
+}
