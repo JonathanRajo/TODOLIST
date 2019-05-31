@@ -1,38 +1,68 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<title>To-Do List, Tarea 2</title>
+<title>To-Do List, Jonthan Rajo</title>
 <link rel="shorcut icon" href="img/2.ico">
 <link rel="stylesheet" href="css/style.css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta charset="utf-8">
+<script type="text/javascript" src="jquery/jquery-3.4.1.min.js"></script>
+
+
 </head>
 <body>
-    <header>
-		<h1> To Do List Agregar y Eliminar Tareas.</h1>
+  <header>
+		<h1> To Do List Agregar y Eliminar JQuery</h1>
 	</header>
 	
 	<main>
 	
 		<article>
 			
-			<div class="addtask">
+			<div class="todo">
+				
 				<form>
 
-					<input type ="text" name="task" placeholder="Hola Roxana escribe una tarea" id="task" size="45" ><br>
+					<input type ="text" name="task" placeholder="Hola Roxana escribe una tarea" id="escribir" size="45" ><br>
 
 				</form>
-				<button type="button" id="inputBtn" class="inputBtn">Agregar Tarea </button>
+				<button type="button" id="boton" class="btn">Agregar Tarea </button>
+				
 			</div>
+			<ul id="agregar">
+					<li><input type="checkbox" class="item"/>Tarea 1 Configurar GitHub <button class="borrar">x</button></li>
+					<li><input type="checkbox" class="item"/>Tarea 2 Ejercicios JQuery <button class="borrar">x</button></li>
+					<li><input type="checkbox" class="item"/>Tarea 2 ToDo-List <button class="borrar">x</button></li>
+			</ul>
 			
-			<div id="board"></div>
 			
 		</article>
 	
 	</main>
-	
-	
-	<script src="js/list.js"></script>
+	<script>
+		function agregaritem(){
+			var escribir = $("#escribir").val();
+			$("#agregar").append('<li><input type="checkbox" class="item"/>'+escribir+ '<button class="borrar">X</button></li>');
+			$("#escribir").val('');
+		}
+		function borraritem(){
+			$(this).parent().remove();
+		}
+		function final(){
+			if($(this).parent().css('textDecoration') == 'line-through'){
+				$(this).parent().css('textDecoration','none');
+			}else{
+				$(this).parent().css('textDecoration','line-through');
+			}
+		
+		}
+		$(function(){
+			$("#boton").on('click', agregaritem);
+		
+			$(document).on('click','.borrar',borraritem);
+			$(document).on('click','.item',final);
+		});
+	</script>
 </body>
 
 </html>

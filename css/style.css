@@ -1,7 +1,7 @@
 body
 {
-	 background-image: url(../img/1.jpg);
- background-repeat: no-repeat;
+	background-image: url(../img/1.jpg);
+ 	background-repeat: no-repeat;
     background-size: 100%;
     margin: 0;
 	background-color: #26282E;
@@ -21,13 +21,13 @@ h1
 	margin-top: 40px;
 }
 
-.addtask
+.todo
 {
 	margin-top: 20px;
 	text-align: center;
 }
 
-input
+#escribir
  {
       width: 30%;
 	  margin-top: 10px;
@@ -37,13 +37,13 @@ input
 	  background-color: #9bc7e6;
 }
 
-input::placeholder 
+#escribir 
 {
 	  color: white;
 	  text-align: center;
 }
 
-.inputBtn
+.btn
 {
 	background-color: #74ccf4;
 	margin-top: 20px;
@@ -55,56 +55,41 @@ input::placeholder
 	font-size: 28px;
 }
 
-.inputBtn:hover
+.btn:hover
 {
 	cursor:pointer;
 	background-color: #00a8a8;
 }
 
-.list
-{
-	width: 90%;
-   
-	margin: auto;
-	background-color: #00d3ef;
-   
-	margin-top: 20px;
-	color: white;
-}
-
-.remove
-{
-	background-color: #0075b3;
-	border: 3px black solid;
-	color: white;
-    width: 4%;
-    padding: 5px 15px;
-	font-size: 17px;
-	position: absolute;
-	margin-right: 5px;
-	right: 0;
-	top: 0;
-	opacity: 0.7;
-}
-.remove:hover
-{
-	cursor: pointer;
-	opacity: 1;
-	background-color: #03a6cc;
-}
-
-.element
-{
-	position: relative;
-	padding: 15px 32px;
-	font-size: 22px;
-	word-wrap: break-word;
+ul{
+	list-style: none;
+	margin-top: 34px;
+	margin-bottom: 34px;
+	
+	
+  }
+ul li{
+	font-size: 1.5em;
+	width: 98%;
+	background: #00a8a8;
+	padding-top: 10px;
 	padding-bottom: 10px;
-	border-bottom: solid #8080ff;
-	cursor: pointer;
+	border-bottom: 3px solid white
+	
 }
+ul li button{
+	margin-left: 40px;
+	background: #0176c4;
+	color: antiquewhite;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	border: none;
+	padding: 15px 15px;
+	float: right;
 
-.element:hover
-{
-	background: #8080ff;
+}
+.item{
+margin-right: 26px;
+border: 3px solid white;
+
+
 }
